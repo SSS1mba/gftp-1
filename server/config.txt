@@ -1,0 +1,5 @@
+# GFTP/1 — server
+
+mode=server
+path=C:\gftp_receive
+port=20010

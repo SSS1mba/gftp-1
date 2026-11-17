@@ -1,0 +1,40 @@
+<mxfile host="Electron">
+  <diagram name="Страница-1" id="tqSz9pfyQdePMh9eh-kX">
+    <mxGraphModel dx="574" dy="762" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="lbl-frame" parent="1" style="text;html=1;align=center;verticalAlign=middle;fontSize=16;fontStyle=1" value="Кадр GFTP/1" vertex="1">
+          <mxGeometry height="25" width="480" x="40" y="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hdr-title" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontStyle=1" value="Заголовок — 12 байт" vertex="1">
+          <mxGeometry height="28" width="480" x="40" y="45" as="geometry" />
+        </mxCell>
+        <mxCell id="f-version" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="version&#xa;1 байт" vertex="1">
+          <mxGeometry height="55" width="40" x="40" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="f-msgtype" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="msg_type&#xa;1 байт" vertex="1">
+          <mxGeometry height="55" width="40" x="80" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="f-flags" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="flags&#xa;2 байта&#xa;(= 0)" vertex="1">
+          <mxGeometry height="55" width="80" x="120" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="f-payloadlen" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="payload_len&#xa;4 байта" vertex="1">
+          <mxGeometry height="55" width="160" x="200" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="f-filecount" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="file_count&#xa;2 байта" vertex="1">
+          <mxGeometry height="55" width="80" x="360" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="f-reserved" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#666666;fontSize=10" value="reserved&#xa;2 байта&#xa;(= 0)" vertex="1">
+          <mxGeometry height="55" width="80" x="440" y="73" as="geometry" />
+        </mxCell>
+        <mxCell id="payload" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontStyle=1" value="Payload — payload_len байт" vertex="1">
+          <mxGeometry height="45" width="480" x="40" y="128" as="geometry" />
+        </mxCell>
+        <mxCell id="lbl-note" parent="1" style="text;html=1;align=left;verticalAlign=top;fontSize=11;fontColor=#666666" value="Все многобайтовые поля — в network byte order (big-endian).&#xa;Максимум payload — 1 МиБ, максимум DATA.data — 64 КиБ." vertex="1">
+          <mxGeometry height="50" width="480" x="40" y="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,5 @@
+# GFTP/1 — client
+mode=client
+path=C:/send/test_folder
+ip=127.0.0.1
+port=20010
